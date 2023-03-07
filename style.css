@@ -1,0 +1,60 @@
+* {
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+body { 
+  background: #d0bdf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card{
+  background: #a0d2eb;
+  color: #a28089;
+  padding: 3em;
+  width: 100%;
+  border-radius: 25px;
+  max-width: 100%;
+  margin: 2em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.button{
+  margin: 0;
+}
+
+button:hover{
+  cursor: pointer;
+  background: black;
+  color: aliceblue;
+}
+
+button:active{
+  cursor: pointer;
+  background: gray;
+  color: aliceblue;
+}
+
+input.searchBar{
+  border: 4px;
+  outline: 8px;
+  padding: none;
+  border-radius: 32px;
+  background: #a28089;
+  color: #edf7F6;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.selectedAreas{
+  margin-top: 15px;
+}
