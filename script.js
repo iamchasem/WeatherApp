@@ -29,14 +29,11 @@ let weather = {
     }
 };
 
-function test(){
-    let simple= document.querySelector("#gregtest")
-  console.log("test",simple)
- // .addEventListener("click", function(){
- // weather.search();
-//});
-}
-test()
+document.querySelector("#searchBtn")
+  .addEventListener("click", function(){
+  weather.search();
+});
+//console.log("test",simple)
 
 weather.fetchWeather("Amsterdam");
 
@@ -47,7 +44,7 @@ const addHome = (ev) =>{
 
   let home = {
   id: Date.now(),
-  saved: document.getElementById("saved").value
+  saved: document.querySelector(".city").innerText
 }
 
 saved.push(home);
@@ -61,8 +58,11 @@ document.getElementById('home').addEventListener('click', addHome);
 });
 
 function displayNewLocations(){
-  let newLocation = document.getElementById("newLocation")
+  let newLocation = document.querySelector(".savedLocations")
+
   let item = saved [saved.length - 1]
- let div =  document.createElement("div")
+ let div = document.createElement("div")
+ div.innerText = item.saved
+newLocation.appendChild(div)
  console.log(item)
 }
